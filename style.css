@@ -4,7 +4,7 @@
     font-family: sans-serif;
     box-sizing: border-box;
 }
-*body{
+body{
     height: 100vh;
     background-color: #f8f8f8;
     display: flex;
@@ -14,4 +14,65 @@
 .container{
     width: 450px;
     height: 80vh;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 2px 20px rgba(0,0,0,0.4);
+    background-color: dodgerblue; 
+
+}
+.header h1{
+    color:  white;
+    padding: 15px;
+}
+.body{
+    flex: 1;
+    color: white;
+    background-color: rgba(0,0,0,0.7);
+    padding: 20px 30px
+}
+.message{
+    background-color: dodgerblue;
+    padding: 10px;
+    color: white;
+    width: fit-content;
+    border-radius: 10px;
+    margin-bottom: 15px; 
+}
+
+.user_message{
+    margin-left: auto;
+    background-color: lightblue;
+    color: black;
+}
+.footer form{
+    display: flex;
+    background-color: rgba(0,0,0,0.7);
+}
+form input{
+    flex: 1; 
+    height: 60px;
+    border: none;
+    outline: none;
+    margin-right: 3px;
+    margin-bottom: 4px;
+    margin-left: 3px;
+    font-size: 16px;
+    border-radius: 17px;
+}
+form button{
+    width: 70px;
+    font-size: 18px;
+    border: none;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    outline: none;
+    background-color: dodgerblue;
+    color: white; 
+    border-radius: 15px;
+    cursor: pointer;
+}
+form button:hover{
+    background-color: rgb(61, 79, 181);
+    transition: 0.4s ease; 
+
 }
